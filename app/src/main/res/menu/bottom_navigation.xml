@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_ic_weight"
+        android:icon="@drawable/ic_scale_24"
+        android:title="@string/weight" />
+
+    <item
+        android:id="@+id/nav_ic_time"
+        android:icon="@drawable/ic_time_24"
+        android:title="@string/time" />
+
+    <item
+        android:id="@+id/nav_ic_temperature"
+        android:icon="@drawable/ic_temperature_24"
+        android:title="@string/temperature"/>
+
+</menu>

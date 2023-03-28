@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Learning Bottom Navigation Bar Kotlin</string>
+    <string name="weight">Weight</string>
+    <string name="time">Time</string>
+    <string name="temperature">Temperature</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
