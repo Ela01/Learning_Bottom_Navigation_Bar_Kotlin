@@ -3,6 +3,8 @@
     <string name="weight">Weight</string>
     <string name="time">Time</string>
     <string name="temperature">Temperature</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="convert_weight">Convert Weight</string>
+    <string name="convert_time">Convert Time</string>
+    <string name="Weight">Weight</string>
 </resources>
