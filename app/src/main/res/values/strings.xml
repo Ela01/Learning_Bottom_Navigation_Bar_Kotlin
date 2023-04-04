@@ -7,4 +7,7 @@
     <string name="convert_weight">Convert Weight</string>
     <string name="convert_time">Convert Time</string>
     <string name="Weight">Weight</string>
+    <string name="weight_image_description">Weight Image</string>
+    <string name="weight_mass">weight (mass)</string>
+    <string name="convert">Convert</string>
 </resources>
