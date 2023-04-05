@@ -10,4 +10,11 @@
     <string name="weight_image_description">Weight Image</string>
     <string name="weight_mass">weight (mass)</string>
     <string name="convert">Convert</string>
+    <string name="time_image">time image</string>
+    <string name="milligrams">milligrams</string>
+    <string name="milligram">milligram</string>
+    <string name="microgram">microgram</string>
+    <string name="gram">gram</string>
+    <string name="kilogram">kilogram</string>
+    <string name="weight_conversions">Weight Conversions</string>
 </resources>

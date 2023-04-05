@@ -3,17 +3,16 @@ package com.ewbugs.learningbottomnavigationbarkotlin
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import android.view.View
-import android.widget.Toast
 import androidx.fragment.app.commit
 import com.ewbugs.learningbottomnavigationbarkotlin.databinding.ActivityMainBinding
-import com.google.android.material.bottomnavigation.BottomNavigationView
+
 import com.google.android.material.navigation.NavigationBarView
 
 
 class MainActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListener {
 
     private lateinit var binding: ActivityMainBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
