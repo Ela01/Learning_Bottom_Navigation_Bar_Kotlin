@@ -62,7 +62,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
-                    android:text="@string/convert"
+                    android:text="@string/seconds"
                     android:textColor="?attr/colorPrimary"
                     android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
@@ -109,7 +109,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
-                    android:text="@string/convert"
+                    android:text="@string/hours"
                     android:textColor="?attr/colorPrimary"
                     android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
@@ -145,7 +145,7 @@
                 android:background="@color/light_grey" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/container_weight_3"
+                android:id="@+id/container_time_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -156,7 +156,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
-                    android:text="@string/convert"
+                    android:text="@string/days"
                     android:textColor="?attr/colorPrimary"
                     android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
@@ -203,7 +203,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
-                    android:text="@string/convert"
+                    android:text="@string/weeks"
                     android:textColor="?attr/colorPrimary"
                     android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
@@ -228,6 +228,53 @@
                     android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/text_view_title_heading_time_4"
+                    tools:text="04/04/23" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/light_grey" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_time_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/text_view_title_heading_time_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/years"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_view_value_time_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="22.04" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_title_heading_time_5"
                     tools:text="04/04/23" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
