@@ -26,4 +26,8 @@
     <string name="stone_uk">stone (UK)</string>
     <string name="ton_uk">ton (UK)</string>
     <string name="time_conversions">Time Conversions</string>
+    <string name="reset_weight_records">Reset Weight Records</string>
+    <string name="reset_time_records">Reset Time Records</string>
+    <string name="reset_temperature_records">Reset Temperature Records</string>
+    <string name="reset_all_records">Reset All Records</string>
 </resources>
