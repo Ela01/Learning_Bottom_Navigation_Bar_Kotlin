@@ -44,18 +44,14 @@ class EditWeightRecordActivity : AppCompatActivity() {
             putString("$measurement Record", record)
             putString("$measurement Date", date)
         }
-
-
 //        *** The 3 TYPES OF SHARED PREFERENCES ***
 
 //        val applicationPreferences = PreferenceManager.getDefaultSharedPreferences(this)
-//
 //        applicationPreferences.edit {
 //            putString("Some application data", "Application preference value here")
 //        }
 //
 //        val activityPreferences = getPreferences(Context.MODE_PRIVATE)
-//
 //        activityPreferences.edit {
 //            putInt("Some activity data", 32)
 //        }
@@ -64,9 +60,5 @@ class EditWeightRecordActivity : AppCompatActivity() {
 //        fileNamePreferences.edit {
 //            putBoolean("Some preference file name data", false)
 //        }
-
-
     }
-
-
 }

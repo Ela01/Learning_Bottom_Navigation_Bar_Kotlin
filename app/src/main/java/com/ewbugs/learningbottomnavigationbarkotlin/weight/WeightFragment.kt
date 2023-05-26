@@ -35,6 +35,7 @@ class WeightFragment : Fragment() {
     }
 
     private fun setUpClickListeners(){
+        binding.containerWeight0.setOnClickListener { launchWeightRecordScreen("Height") }
         binding.containerWeight1.setOnClickListener { launchWeightRecordScreen("Weight") }
         binding.containerWeight2.setOnClickListener { launchWeightRecordScreen("Neck Measurement") }
         binding.containerWeight3.setOnClickListener { launchWeightRecordScreen("Hips Measurement") }
@@ -45,6 +46,8 @@ class WeightFragment : Fragment() {
     private fun displayRecords() {
         val weightPreferences = requireContext().getSharedPreferences("measurement", Context.MODE_PRIVATE)
 
+        binding.textViewValue0.text = weightPreferences.getString("Height Record", null)
+        binding.textViewDate0.text = weightPreferences.getString("Height Date", null)
         binding.textViewValue1.text = weightPreferences.getString("Weight Record", null)
         binding.textViewDate1.text = weightPreferences.getString("Weight Date", null)
         binding.textViewValue2.text = weightPreferences.getString("Neck Measurement Record", null)

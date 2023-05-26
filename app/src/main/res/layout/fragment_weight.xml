@@ -22,7 +22,7 @@
                 android:layout_height="match_parent"
                 android:contentDescription="@string/weight_image_description"
                 android:scaleType="centerCrop"
-                android:src="@drawable/weight_mass_" />
+                android:src="@drawable/measuring_tape" />
 
             <View
                 android:layout_width="match_parent"
@@ -33,10 +33,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:fontFamily="sans-serif-condensed-medium"
+                android:fontFamily="sans-serif-thin"
                 android:gravity="center"
-                android:text="@string/weight_mass"
-                android:textColor="@color/dark_grey"
+                android:text="@string/measurement_records"
+                android:textColor="#FFD54F"
                 android:textSize="32sp" />
 
         </FrameLayout>
@@ -51,6 +51,54 @@
             app:layout_constraintTop_toBottomOf="@id/frame_heading">
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_weight_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/text_view_title_heading_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/height"
+                    android:textColor="@color/material_dynamic_neutral0"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_view_value_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="22.04" />
+
+                <TextView
+                    android:id="@+id/text_view_date_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_title_heading_0"
+                    tools:text="04/04/23" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/light_grey" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/container_weight_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -61,9 +109,9 @@
                     android:id="@+id/text_view_title_heading_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif"
+                    android:fontFamily="sans-serif-light"
                     android:text="@string/Weight"
-                    android:textColor="?attr/colorPrimary"
+                    android:textColor="@color/material_dynamic_neutral0"
                     android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -109,9 +157,9 @@
                     android:id="@+id/text_view_title_heading_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif"
+                    android:fontFamily="sans-serif-light"
                     android:text="@string/neck_measurement"
-                    android:textColor="?attr/colorPrimary"
+                    android:textColor="@color/black"
                     android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -157,9 +205,9 @@
                     android:id="@+id/text_view_title_heading_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif"
+                    android:fontFamily="sans-serif-light"
                     android:text="@string/hips_measurement"
-                    android:textColor="?attr/colorPrimary"
+                    android:textColor="@color/black"
                     android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -205,9 +253,9 @@
                     android:id="@+id/text_view_title_heading_4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif"
+                    android:fontFamily="sans-serif-light"
                     android:text="@string/waist_measurement"
-                    android:textColor="?attr/colorPrimary"
+                    android:textColor="@color/black"
                     android:textSize="20sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />

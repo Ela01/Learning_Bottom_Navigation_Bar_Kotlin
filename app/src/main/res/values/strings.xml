@@ -37,4 +37,6 @@
     <string name="neck_measurement">Neck Measurement</string>
     <string name="hips_measurement">Hips Measurement</string>
     <string name="waist_measurement">Waist Measurement</string>
+    <string name="measurement_records">Measurement Records</string>
+    <string name="height">Height</string>
 </resources>
