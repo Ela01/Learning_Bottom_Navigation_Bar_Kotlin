@@ -33,4 +33,8 @@
     <string name="date">Date</string>
     <string name="save">Save</string>
     <string name="clear_record">Clear Record</string>
+    <string name="measurement">Measurement</string>
+    <string name="neck_measurement">Neck Measurement</string>
+    <string name="hips_measurement">Hips Measurement</string>
+    <string name="waist_measurement">Waist Measurement</string>
 </resources>
