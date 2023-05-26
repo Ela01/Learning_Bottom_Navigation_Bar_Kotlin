@@ -1,4 +1,4 @@
-package com.ewbugs.learningbottomnavigationbarkotlin
+package com.ewbugs.learningbottomnavigationbarkotlin.weight
 
 import android.content.Intent
 import android.os.Bundle

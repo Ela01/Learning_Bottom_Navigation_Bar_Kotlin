@@ -1,4 +1,4 @@
-package com.ewbugs.learningbottomnavigationbarkotlin
+package com.ewbugs.learningbottomnavigationbarkotlin.time
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -12,11 +12,11 @@
         android:theme="@style/Theme.LearningBottomNavigationBarKotlin"
         tools:targetApi="31">
         <activity
-            android:name=".EditTimeRecordActivity"
+            android:name=".time.EditTimeRecordActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".EditWeightRecordActivity"
+            android:name=".weight.EditWeightRecordActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity

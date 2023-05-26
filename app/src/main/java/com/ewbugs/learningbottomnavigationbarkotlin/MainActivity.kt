@@ -7,6 +7,8 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.fragment.app.commit
 import com.ewbugs.learningbottomnavigationbarkotlin.databinding.ActivityMainBinding
+import com.ewbugs.learningbottomnavigationbarkotlin.time.TimeFragment
+import com.ewbugs.learningbottomnavigationbarkotlin.weight.WeightFragment
 
 import com.google.android.material.navigation.NavigationBarView
 
