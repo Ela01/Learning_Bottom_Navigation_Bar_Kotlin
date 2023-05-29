@@ -1,6 +1,7 @@
 package com.ewbugs.learningbottomnavigationbarkotlin.weight
 
 import android.content.Context
+import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.edit
@@ -9,41 +10,52 @@ import com.ewbugs.learningbottomnavigationbarkotlin.databinding.ActivityEditWeig
 class EditWeightRecordActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityEditWeightRecordBinding
+    private val weightPreferences by lazy { getSharedPreferences("weight", Context.MODE_PRIVATE) }
+    private val measurement by lazy { intent.getStringExtra("Measurement") }// check if 'Meas..' is lowercase?
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityEditWeightRecordBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        val measurement = intent.getStringExtra("Measurement")
-        title = "$measurement Record"
-
-        displayRecord(measurement)
-        binding.buttonSave.setOnClickListener {
-            saveRecord(measurement)
-            finish()
-
-        }
-
+        setupUI()
+        displayRecord()
     }
 
-    private fun displayRecord(measurement: String?) {
-        val weightPreferences = getSharedPreferences("measurement", Context.MODE_PRIVATE)
+    private fun setupUI() {
+        title = "$measurement Record"
+        binding.buttonSave.setOnClickListener {
+            saveRecord()
+            finish()
+        }
+        binding.buttonDelete.setOnClickListener {
+            clearRecord()
+            finish()
+        }
+    }
 
+    private fun displayRecord() {
         binding.editTextRecord.setText(weightPreferences.getString("$measurement Record", null))
         binding.editTextDate.setText(weightPreferences.getString("$measurement Date", null))
-
     }
 
-    private fun saveRecord(measurement: String?) {
+    private fun saveRecord() {
         val record = binding.editTextRecord.text.toString()
         val date = binding.editTextDate.text.toString()
 
-        val weightPreferences = getSharedPreferences("measurement", Context.MODE_PRIVATE)
         weightPreferences.edit {
             putString("$measurement Record", record)
             putString("$measurement Date", date)
         }
+    }
+
+    private fun clearRecord() {
+        weightPreferences.edit {
+            remove("$measurement Record")
+            remove("$measurement Date")
+        }
+    }
+}
+
 //        *** The 3 TYPES OF SHARED PREFERENCES ***
 
 //        val applicationPreferences = PreferenceManager.getDefaultSharedPreferences(this)
@@ -60,5 +72,3 @@ class EditWeightRecordActivity : AppCompatActivity() {
 //        fileNamePreferences.edit {
 //            putBoolean("Some preference file name data", false)
 //        }
-    }
-}
