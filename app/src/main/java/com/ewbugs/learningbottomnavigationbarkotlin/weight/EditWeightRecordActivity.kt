@@ -34,8 +34,8 @@ class EditWeightRecordActivity : AppCompatActivity() {
     }
 
     private fun displayRecord() {
-        binding.editTextRecord.setText(weightPreferences.getString("$measurement Record", null))
-        binding.editTextDate.setText(weightPreferences.getString("$measurement Date", null))
+        binding.editTextRecord.setText(weightPreferences.getString("$measurement record", null))
+        binding.editTextDate.setText(weightPreferences.getString("$measurement date", null))
     }
 
     private fun saveRecord() {
@@ -43,15 +43,15 @@ class EditWeightRecordActivity : AppCompatActivity() {
         val date = binding.editTextDate.text.toString()
 
         weightPreferences.edit {
-            putString("$measurement Record", record)
-            putString("$measurement Date", date)
+            putString("$measurement record", record)
+            putString("$measurement date", date)
         }
     }
 
     private fun clearRecord() {
         weightPreferences.edit {
-            remove("$measurement Record")
-            remove("$measurement Date")
+            remove("$measurement record")
+            remove("$measurement date")
         }
     }
 }
